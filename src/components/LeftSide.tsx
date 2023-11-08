@@ -11,7 +11,7 @@ export default function LeftSideComponent(prop: LeftSideProp) {
             <div className="flex flex-col">
                 <div className="text-5xl font-bold tracking-tight">
                     {
-                        prop.name ? <span>{ prop.name }</span> : <span>Muhammad Reza Nur</span>
+                        prop.name ? <span>{ prop.name }</span> : <span></span>
                     }
                 </div>
                 <div className="text-2xl font-medium tracking-tight mt-4">
