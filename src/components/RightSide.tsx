@@ -7,8 +7,8 @@ export default function RightSideComponent() {
             <p className="w-full pt-24 mb-10">
                 I Started my journey as Software Engineer at 2012. My Journey started from company in my city Bandung.
             </p>
-            {ExperienceDatas.map((exp) => (
-                <ExperienceItemComponent {...exp} />
+            {ExperienceDatas.map((exp, index) => (
+                <ExperienceItemComponent {...exp} key={index} />
             ))}
         </main>
     )
