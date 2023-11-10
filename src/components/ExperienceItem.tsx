@@ -1,4 +1,5 @@
 import { ExperienceItemProp } from "@/models/experience";
+import SkillItemComponent from "./SkillItem";
 
 export default function ExperienceItemComponent({ startYear, endYear, position, company, description, link, skills }: ExperienceItemProp) {
     return (
@@ -12,6 +13,9 @@ export default function ExperienceItemComponent({ startYear, endYear, position, 
                 <p>
                     { description }
                 </p>
+                <div>
+                    <SkillItemComponent skills={skills} />
+                </div>
             </div>
         </div>
     )

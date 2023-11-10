@@ -21,6 +21,21 @@ const ExperienceDatas: Array<ExperienceItemProp> = [
         "description": "",
         skills: ["go", "elasticsearch", "redis"]
     },
+    {
+        startYear: "2017", endYear: "2017", position: "Freelance Web Developer", company: "Skylar Labs Inc", link: "",
+        "description": "",
+        skills: ["python", "HTML", "CSS"]
+    },
+    {
+        startYear: "2013", endYear: "2016", position: "Software Engineer", company: "Validata Teknologi", link: "",
+        "description": "",
+        skills: ["go", "elasticsearch", "redis"]
+    },
+    {
+        startYear: "2012", endYear: "2013", position: "Web Developer", company: "Citra Niaga Teknologi", link: "",
+        "description": "",
+        skills: ["go", "elasticsearch", "redis"]
+    },
 ]
 
 export default ExperienceDatas;
