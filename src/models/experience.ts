@@ -8,3 +8,7 @@ export interface ExperienceItemProp {
     skills: Array<string>;
 }
 
+export interface SkillItemProp {
+    skills: Array<string>;
+}
+
