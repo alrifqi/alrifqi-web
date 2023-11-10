@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [alrifqi.com](https://alrifiq.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/4941e8d4-b277-49d5-b740-4e611ec753cb/deploy-status)](https://app.netlify.com/sites/transcendent-taiyaki-00d76b/deploys)
 
 ## Getting Started
 
