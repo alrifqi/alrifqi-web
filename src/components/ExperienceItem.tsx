@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ExperienceItemProp } from "@/models/experience";
 import SkillItemComponent from "./SkillItem";
 
