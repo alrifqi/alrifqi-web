@@ -21,6 +21,21 @@ export default function LeftSideComponent(prop: LeftSideProp) {
                 <div className="text-slate-400">
                     I build digital world for real world.
                 </div>
+
+                <div className="flex flex-col mt-24 space-y-3">
+                  <div className="group flex flex-row items-center hover:cursor-pointer">
+                    <div className="h-px w-10 bg-slate-400 group-hover:w-24 group-hover:bg-white transition-all"/>
+                    <span className="ml-4 text-slate-400 group-hover:text-white">Home</span>
+                  </div>
+                  <div className="group flex flex-row items-center hover:cursor-pointer">
+                    <div className="h-px w-10 bg-slate-400 group-hover:w-24 group-hover:bg-white transition-all"/>
+                    <span className="ml-4 text-slate-400 group-hover:text-white">Portfolio</span>
+                  </div>
+                  <div className="group flex flex-row items-center hover:cursor-pointer">
+                    <div className="h-px w-10 bg-slate-400 group-hover:w-24 group-hover:bg-white transition-all"/>
+                    <span className="ml-4 text-slate-400 group-hover:text-white">Blog</span>
+                  </div>
+                </div>
             </div>
 
             <div className="flex flex-row items-left gap-4">
