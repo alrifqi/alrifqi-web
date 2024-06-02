@@ -14,6 +14,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const anim_gradient = {
+    background: "linear-gradient(90deg, hsla(277, 79%, 84%, 1) 0%, hsla(204, 95%, 77%, 1) 100%)",
+    backgroundSize : "400% 400%",
+    animation : "gradient 25s ease infinite",
+  };
   return (
     <html lang="en">
       <head>
@@ -22,7 +27,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap" rel="stylesheet" />
         <link rel="icon" href="favicon.ico" type="image/png" sizes="32x32" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} className="bg-[url('/background.jpg')] bg-cover">{children}</body>
     </html>
   )
 }
