@@ -6,7 +6,6 @@ import ExperienceItem from "../components/ExperienceItem";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { SiCodepen } from "react-icons/si";
 import { FiFolder, FiExternalLink } from "react-icons/fi";
 import { useState } from "react";
 
@@ -31,7 +30,7 @@ export default function Home() {
       name: "TaskFlow",
       tech: "Next.js, TypeScript, Tailwind CSS",
       description: "A productivity app for managing daily tasks and team projects.",
-      link: "https://github.com/alexjohnson/taskflow",
+      link: "https://github.com/alrifqi",
       category: "Web",
     },
     {
@@ -79,59 +78,64 @@ export default function Home() {
   // Experience section data and state
   const experienceList = [
     {
-      company: "Upstatement",
-      role: "Creative Technologist Co-op",
-      companyUrl: "#",
-      date: "July – December 2015",
+      company: "ganknow.com",
+      role: "Senior Sofware Engineer",
+      companyUrl: "ganknow.com",
+      date: "2023 - 2024",
       details: [
-        "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness",
-        "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
+        "Develop & optimize stream alert system, so whenever user donate to creator it will show alert. This feature generates the most revenue to the company compared to other features",
+        "Build new api & optimize api with low latency to earth more revenue from application",
+        "Collaboration with product manager, other engineer & QA for adding new features & release",
       ],
     },
     {
-      company: "Apple",
+      company: "99.co",
+      role: "Senior Sofware Engineer",
+      companyUrl: "99.co",
+      date: "2022 - 2023",
+      details: [
+        "Migrate application to new tech stack. with this migration reduce infrastructure cost, robust performance, more maintainable codebase & decrease error rate",
+        "Write unit tests for whole code base to ensure quality of code & application. Unit tests cover 70-80% of the code base",
+        "Collaboration with internal teams include product manager & QA to add new features & release it to gain more new users & increase the number of subscribes/paid users",
+      ],
+    },
+    {
+      company: "Freelance",
       role: "Software Engineer Intern",
       companyUrl: "#",
-      date: "Jan – June 2015",
+      date: "Mar – December 2022",
       details: [
-        "Worked on internal tools for the iCloud team",
-        "Collaborated with cross-functional teams to deliver new features",
+        "Build a digital crypto market (autobitco.com), integrating several crypto currencies for sellers & buyers to trade, or buy crypto coins with money. Write unit tests for the whole code base to ensure quality of code & application. Unit tests cover 65-80% of the code base",
+        "Build a financial consolidation platform. This platform makes user easier for users to create financial consolidation & reports from companies & several sub-companies.",
       ],
     },
     {
-      company: "Scout Studio",
-      role: "Web Developer",
-      companyUrl: "#",
-      date: "2014 – 2015",
+      company: "QuokkaHR",
+      role: "Fullstack engineer",
+      companyUrl: "quokkahr.com",
+      date: "2020 – 2022",
       details: [
-        "Built and maintained websites for student organizations",
-        "Led a team of 3 developers for a campus project",
+        "Setup & maintenance CI/CD for run test to check all current/new features & auto deployment to dev & staging environment",
+        "Build & maintenance OKR app used by users",
+        "Design codebase structure so it is modular & easier to add more modules/features make a new joiner easy to work with the application on his first day work",
+        "Managed design system architecture & implementation for survey application used by about 500k user per day",
+        "Collaborate with internal teams & owner for adding more features",
       ],
     },
     {
-      company: "Starry",
-      role: "QA Engineer",
-      companyUrl: "#",
-      date: "2013 – 2014",
+      company: "Aersure",
+      role: "Software Engineer & founding engineer",
+      companyUrl: "aersure.com",
+      date: "2018 – 2020",
       details: [
-        "Tested web and mobile applications for bugs and usability",
-        "Wrote automated test scripts in Selenium",
-      ],
-    },
-    {
-      company: "MullenLowe",
-      role: "Creative Technologist Co-op",
-      companyUrl: "#",
-      date: "July – December 2015",
-      details: [
-        "Developed, maintained, and shipped production code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Performed quality assurance tests on various sites to ensure cross-browser compatibility and mobile responsiveness",
-        "Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more",
+        "Build an mvp that suits market & user needs. When MVP was launched we got orders with a minimum order around 100 orders per day",
+        "Add integration to send data & pull data from partners. With this feature we can change from manual send data using excel and with this make our ops team can work more efficiently & faster. Also we can display the real time monitor of the user's order",
+        "Managed Design system architecture & implementation to optimize the platform. With this optimization, the platform can handle around 14k orders per day",
+        "Collaborate with internal teams and product managers for adding more features/functionalities",
       ],
     },
   ];
-  const [selectedExp, setSelectedExp] = useState(experienceList.length - 1);
+  const [selectedExp, setSelectedExp] = useState(0);
 
   // Noteworthy projects data and state
   const [visibleCount, setVisibleCount] = useState(6);
@@ -214,12 +218,12 @@ export default function Home() {
         <a href="https://twitter.com/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
           <FaTwitter size={24} className="text-foreground/60 hover:text-blue-400 transition" />
         </a>
-        <a href="https://linkedin.com/in/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/alrifqi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin size={24} className="text-foreground/60 hover:text-blue-600 transition" />
         </a>
-        <a href="https://codepen.io/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="CodePen">
+        {/* <a href="https://codepen.io/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="CodePen">
           <SiCodepen size={24} className="text-foreground/60 hover:text-gray-400 transition" />
-        </a>
+        </a> */}
         <div className="w-px h-16 mt-2" />
       </motion.div>
 
@@ -234,8 +238,8 @@ export default function Home() {
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold">Hi, I’m Alex Johnson</h1>
-          <p className="text-lg text-foreground/80 max-w-xl">A passionate web developer crafting modern, performant, and beautiful web experiences.</p>
+          <h1 className="text-4xl sm:text-5xl font-bold">Hi, I’m Reza</h1>
+          <p className="text-lg text-foreground/80 max-w-xl">A passionate software engineer crafting modern, performant, and beautiful web experiences.</p>
           <div className="flex gap-4 mt-2">
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border rounded text-sm font-medium hover:bg-foreground hover:text-background transition">Resume</a>
           </div>
@@ -307,7 +311,7 @@ export default function Home() {
         </motion.section>
 
         {/* Projects Section */}
-        <motion.section
+        {/* <motion.section
           id="projects"
           className="flex flex-col gap-4"
           initial={{ opacity: 0, y: 40 }}
@@ -352,7 +356,7 @@ export default function Home() {
               </button>
             </div>
           )}
-        </motion.section>
+        </motion.section> */}
 
         {/* Contact Section */}
         <motion.section
@@ -364,7 +368,7 @@ export default function Home() {
           transition={{ duration: 0.7, delay: 0.4 }}
         >
           <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-          <p className="max-w-2xl text-foreground/80">Want to work together or have a question? Email me at <a href="mailto:alex.johnson@email.com" className="underline hover:text-blue-600">alex.johnson@email.com</a> or use the contact form below.</p>
+          <p className="max-w-2xl text-foreground/80">Want to work together or have a question? Email me at <a href="mailto:reza.rifqi@gmail.com" className="underline hover:text-blue-600">reza.rifqi@gmail.com</a> or use the contact form below.</p>
           <form onSubmit={handleFormSubmit} className="flex flex-col gap-4 max-w-md mt-2">
             <input
               type="email"
@@ -398,7 +402,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-sm text-foreground/60 border-t border-foreground/10">
-        © {new Date().getFullYear()} Alex Johnson. Built with Next.js & Tailwind CSS.
+        © {new Date().getFullYear()} Reza. Built with Next.js & Tailwind CSS.
       </footer>
     </div>
   );

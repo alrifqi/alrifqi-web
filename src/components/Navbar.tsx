@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-foreground/10">
       <div className="flex items-center justify-between px-6 sm:px-12 py-3 w-full">
-        <span className="font-bold text-lg tracking-tight">My Portfolio</span>
+        <span className="font-bold text-lg tracking-tight"></span>
         <div className="flex-1" />
         <ul className="flex gap-6 text-sm items-center">
           {sections.map((section) => (
