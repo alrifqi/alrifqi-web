@@ -33,7 +33,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-foreground/10">
+    <nav className="sticky top-0 z-50 w-full bg-white/30 backdrop-blur-lg border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)]">
       <div className="flex items-center justify-between px-6 sm:px-12 py-3 w-full">
         <span className="font-bold text-lg tracking-tight"></span>
         <div className="flex-1" />

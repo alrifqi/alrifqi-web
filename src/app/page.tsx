@@ -38,21 +38,21 @@ export default function Home() {
       name: "DevConnect",
       tech: "React, Node.js, MongoDB",
       description: "A social platform for developers to share projects and connect.",
-      link: "https://github.com/alexjohnson/devconnect",
+      link: "https://github.com/alrifqi",
       category: "Web",
     },
     {
       name: "Portfolio Website",
       tech: "Next.js, Tailwind CSS",
       description: "My personal portfolio and blog, built with the latest web technologies.",
-      link: "https://alexjohnson.dev",
+      link: "https://alrifqi.com",
       category: "Web",
     },
     {
       name: "ShopEase",
       tech: "Vue.js, Firebase",
       description: "A simple e-commerce platform for small businesses.",
-      link: "https://github.com/alexjohnson/shopease",
+      link: "https://github.com/alrifqi",
       category: "Web",
     },
     {
@@ -200,90 +200,88 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 via-pink-100 to-yellow-100 text-black font-sans relative overflow-x-hidden">
+      {/* Neubrutalism Accent Shapes */}
+      <div className="hidden md:block absolute top-10 left-[-60px] w-40 h-40 bg-yellow-300 border-4 border-black rounded-2xl rotate-12 z-0" />
+      <div className="hidden md:block absolute bottom-20 right-[-80px] w-52 h-52 bg-pink-300 border-4 border-black rounded-full -rotate-6 z-0" />
       {/* Sticky Navigation */}
       <Navbar />
 
       {/* Social Bar (bottom-right, desktop only) */}
       <motion.div
-        className="hidden lg:flex flex-col items-center gap-6 fixed bottom-0 right-8 z-40"
-        // animate={{ y: [0, -20, 0] }}
-        // transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        className="hidden lg:flex flex-col items-center gap-6 fixed bottom-0 right-8 z-40 bg-white/30 backdrop-blur-md border-4 border-black rounded-2xl p-4 shadow-[6px_6px_0_0_rgba(0,0,0,1)]"
       >
-        <a href="https://github.com/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <FaGithub size={24} className="text-foreground/60 hover:text-blue-400 transition" />
+        <a href="https://github.com/alrifqi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <FaGithub size={28} className="text-black hover:text-blue-500 transition" />
         </a>
-        <a href="https://instagram.com/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <FiInstagram size={24} className="text-foreground/60 hover:text-pink-400 transition" />
+        <a href="https://instagram.com/alrifqi" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FiInstagram size={28} className="text-black hover:text-pink-500 transition" />
         </a>
-        <a href="https://twitter.com/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <FaTwitter size={24} className="text-foreground/60 hover:text-blue-400 transition" />
+        <a href="https://twitter.com/alrifqi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter size={28} className="text-black hover:text-blue-400 transition" />
         </a>
         <a href="https://linkedin.com/in/alrifqi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <FaLinkedin size={24} className="text-foreground/60 hover:text-blue-600 transition" />
+          <FaLinkedin size={28} className="text-black hover:text-blue-700 transition" />
         </a>
-        {/* <a href="https://codepen.io/alexjohnson" target="_blank" rel="noopener noreferrer" aria-label="CodePen">
-          <SiCodepen size={24} className="text-foreground/60 hover:text-gray-400 transition" />
-        </a> */}
-        <div className="w-px h-16 mt-2" />
+        <div className="w-px h-16 mt-2 bg-black/20" />
       </motion.div>
 
       {/* Main Sections */}
-      <main className="max-w-6xl mx-auto px-4 flex flex-col gap-32 py-16">
+      <main className="max-w-6xl mx-auto px-4 flex flex-col gap-32 py-16 relative z-10">
         {/* Hero Section */}
         <motion.section
           id="hero"
-          className="min-h-[60vh] flex flex-col justify-center items-start gap-4"
+          className="min-h-[60vh] flex flex-col justify-center items-start gap-4 bg-white/30 backdrop-blur-lg border-4 border-black rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold">Hi, I’m Reza</h1>
-          <p className="text-lg text-foreground/80 max-w-xl">A passionate software engineer crafting modern, performant, and beautiful web experiences.</p>
+          <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-black mb-2">Hi, I’m <span className="bg-yellow-300 border-2 border-black px-2 rounded-md">Reza</span></h1>
+          <p className="text-xl text-black/80 max-w-xl font-semibold">A passionate software engineer crafting modern, performant, and beautiful web experiences.</p>
           <div className="flex gap-4 mt-2">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-4 py-2 border rounded text-sm font-medium hover:bg-foreground hover:text-background transition">Resume</a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border-4 border-black rounded-lg text-base font-bold bg-pink-300 shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:bg-yellow-300 transition">Resume</a>
           </div>
         </motion.section>
 
         {/* About Section */}
         <motion.section
           id="about"
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-4 bg-white/30 backdrop-blur-lg border-4 border-black rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.7, delay: 0.1 }}
         >
-          <h2 className="text-2xl font-semibold mb-2">About</h2>
-          <p className="max-w-2xl text-foreground/80">I’m a software engineer based in Jakarta, Indonesia. I specialize in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on developing accessible, human-centered products at TechNova.</p>
+          <h2 className="text-3xl font-extrabold mb-2 text-black underline decoration-pink-400 decoration-4">About</h2>
+          <p className="max-w-2xl text-black/80 font-medium">I’m a software engineer based in Jakarta, Indonesia. I specialize in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on developing accessible, human-centered products at TechNova.</p>
         </motion.section>
 
         {/* Experience Section */}
         <motion.section
           id="experience"
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-4 bg-white/30 backdrop-blur-lg border-4 border-black rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <h2 className="text-2xl font-semibold mb-2 flex items-center gap-4">
+          <h2 className="text-3xl font-extrabold mb-2 flex items-center gap-4 text-black underline decoration-blue-400 decoration-4">
             Experience
-            <span className="flex-1 border-t border-foreground/10 ml-4" />
+            <span className="flex-1 border-t-4 border-black ml-4" />
           </h2>
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 mt-4">
             {/* Vertical Tabs */}
             <div className="relative flex md:flex-col md:w-48 w-full md:items-start items-center md:gap-0 gap-2">
-              <div className="absolute left-0 top-0 h-full w-0.5 bg-primary/60 hidden md:block" />
+              {/* <div className="absolute left-0 top-0 h-full w-1 bg-black hidden md:block" /> */}
               <ul className="flex md:flex-col flex-row w-full md:w-auto md:gap-0 gap-2 z-10">
                 {experienceList.map((exp, idx) => (
                   <li key={exp.company} className="w-full">
                     <button
                       onClick={() => setSelectedExp(idx)}
-                      className={`font-mono text-sm px-4 py-2 md:border-l-2 border-primary/0 md:w-full text-left transition-colors
-                        ${selectedExp === idx ? "text-primary border-primary bg-primary/10" : "text-foreground/60 hover:text-primary"}`}
-                      style={{ borderLeftWidth: selectedExp === idx ? 2 : 2 }}
+                      className={`font-mono text-base px-4 py-2 border-2 border-black rounded-lg md:w-full text-left font-bold transition-colors shadow-[2px_2px_0_0_rgba(0,0,0,1)]
+                        ${selectedExp === idx ? "bg-blue-300 text-black" : "bg-white text-black hover:bg-yellow-200"}`}
+                      style={{ borderLeftWidth: selectedExp === idx ? 4 : 2 }}
                     >
                       {exp.company}
                     </button>
@@ -293,17 +291,17 @@ export default function Home() {
             </div>
             {/* Details Panel */}
             <div className="flex-1">
-              <div className="font-semibold text-lg">
-                {experienceList[selectedExp].role} <span className="text-primary font-mono">@ {experienceList[selectedExp].company}</span>
+              <div className="font-extrabold text-2xl">
+                {experienceList[selectedExp].role} <span className="text-blue-600 font-mono">@ {experienceList[selectedExp].company}</span>
               </div>
-              <div className="text-foreground/60 text-sm mb-4 mt-1 font-mono">
+              <div className="text-black/60 text-base mb-4 mt-1 font-mono">
                 {experienceList[selectedExp].date}
               </div>
               <ul className="list-none space-y-2">
                 {experienceList[selectedExp].details.map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-primary text-lg leading-6 mt-0.5">▸</span>
-                    <span className="text-foreground/80">{item}</span>
+                    <span className="text-blue-600 text-xl leading-6 mt-0.5">▸</span>
+                    <span className="text-black/80 font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -362,14 +360,14 @@ export default function Home() {
         {/* Contact Section */}
         <motion.section
           id="contact"
-          className="flex flex-col gap-4"
+          className="flex flex-col gap-4 bg-white/30 backdrop-blur-lg border-4 border-black rounded-2xl shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-8"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          <h2 className="text-2xl font-semibold mb-2">Contact</h2>
-          <p className="max-w-2xl text-foreground/80">Want to work together or have a question? Email me at <a href="mailto:reza.rifqi@gmail.com" className="underline hover:text-blue-600">reza.rifqi@gmail.com</a> or use the contact form below.</p>
+          <h2 className="text-3xl font-extrabold mb-2 text-black underline decoration-yellow-400 decoration-4">Contact</h2>
+          <p className="max-w-2xl text-black/80 font-medium">Want to work together or have a question? Email me at <a href="mailto:reza.rifqi@gmail.com" className="underline hover:text-blue-600 font-bold">reza.rifqi@gmail.com</a> or use the contact form below.</p>
           <form onSubmit={handleFormSubmit} className="flex flex-col gap-4 max-w-md mt-2">
             <input
               type="email"
@@ -377,7 +375,7 @@ export default function Home() {
               placeholder="Your email"
               value={form.email}
               onChange={handleFormChange}
-              className="border rounded px-3 py-2 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border-4 border-black rounded-lg px-3 py-2 bg-white text-black font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-[2px_2px_0_0_rgba(0,0,0,1)]"
               required
             />
             <textarea
@@ -385,15 +383,15 @@ export default function Home() {
               placeholder="Your message"
               value={form.message}
               onChange={handleFormChange}
-              className="border rounded px-3 py-2 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border-4 border-black rounded-lg px-3 py-2 bg-white text-black font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-[2px_2px_0_0_rgba(0,0,0,1)]"
               rows={4}
               required
             />
-            {formError && <div className="text-red-600 text-sm">{formError}</div>}
-            {formSuccess && <div className="text-green-600 text-sm">Message sent! (Dummy form)</div>}
+            {formError && <div className="text-red-600 text-sm font-bold">{formError}</div>}
+            {formSuccess && <div className="text-green-600 text-sm font-bold">Message sent! (Dummy form)</div>}
             <button
               type="submit"
-              className="bg-primary text-[#0a192f] px-4 py-2 rounded font-medium hover:bg-primary/80 transition"
+              className="bg-yellow-300 border-4 border-black text-black px-6 py-2 rounded-lg font-bold shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:bg-pink-300 transition"
             >
               Send Message
             </button>
@@ -402,7 +400,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 text-center text-sm text-foreground/60 border-t border-foreground/10">
+      <footer className="py-8 text-center text-base text-black border-t-4 border-black bg-white/30 backdrop-blur-lg shadow-[0_-4px_0_0_rgba(0,0,0,1)] font-bold">
         © {new Date().getFullYear()} Reza. Built with Next.js & Tailwind CSS.
       </footer>
     </div>
