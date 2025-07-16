@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
